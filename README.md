@@ -1,4 +1,5 @@
-== Resize images as they appear ==
+Watch a folder and resize images (in PowerShell)
+================================================
 
 Suppose you have two folders called "Inbox" and "Outbox". You have something that puts images in Inbox and want them to appear, scaled down, in Outbox.
 

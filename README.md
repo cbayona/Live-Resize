@@ -6,8 +6,16 @@ Suppose you have two folders called "Inbox" and "Outbox". You have something tha
     powershell -executionpolicy remotesigned
     .\Live-Resize
 
-Note that you need to manually
+Caveat: Does not clean up
+-------------------------
+
+You need to manually
 
     Unregister-Event FileCreated
 
-Note that you need to hard-code new dimensions in Live-Resize.ps1 (look for $WidthMap and $HeightMap). Left-hand side is the original dimension, right-hand side is the desired dimension.
+when you want to stop.
+
+Caveat: Hard-coded output dimensions
+------------------------------------
+
+You need to hard-code new dimensions in `Live-Resize.ps1` (look for `$WidthMap` and `$HeightMap`). Left-hand side is the original dimension, right-hand side is the desired dimension.

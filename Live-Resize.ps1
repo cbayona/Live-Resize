@@ -30,7 +30,7 @@ $Unused = Register-ObjectEvent $Watcher Created -SourceIdentifier FileCreated -A
   Write-Host "Output Width:", $OutputWidth
   Write-Host "Output Height:", $OutputHeight
 
-  $OutputImage = new-object System.Drawing.Bitmap $OutputWidth, $OutputHeight
+  $OutputImage = New-Object System.Drawing.Bitmap $OutputWidth, $OutputHeight
 
   $Graphics = [System.Drawing.Graphics]::FromImage($OutputImage)
   $Graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic

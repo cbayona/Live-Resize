@@ -21,14 +21,14 @@ $Unused = Register-ObjectEvent $Watcher Created -SourceIdentifier FileCreated -A
   $InputWidth = $InputImage.Width
   $InputHeight = $InputImage.Height
 
-  Write-Host "Input Width":, $InputWidth
-  Write-Host "Input Height":, $InputHeight
+  Write-Host "Input Width:", $InputWidth
+  Write-Host "Input Height:", $InputHeight
 
   $OutputWidth = $WidthMap.$InputWidth
   $OutputHeight = $HeightMap.$InputHeight
 
-  Write-Host "Output Width":, $OutputWidth
-  Write-Host "Output Height":, $OutputHeight
+  Write-Host "Output Width:", $OutputWidth
+  Write-Host "Output Height:", $OutputHeight
 
   $OutputImage = new-object System.Drawing.Bitmap $OutputWidth, $OutputHeight
 

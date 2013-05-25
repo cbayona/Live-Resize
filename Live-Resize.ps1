@@ -16,7 +16,7 @@ $Unused = Register-ObjectEvent $Watcher Created -SourceIdentifier FileCreated -A
   Write-Host "New Input File:", $InputFile
   Write-Host "Output File:", $OutputFile
 
-  $InputImage = [system.drawing.image]::FromFile($InputFile)
+  $InputImage = [System.Drawing.Image]::FromFile($InputFile)
 
   $InputWidth = $InputImage.Width
   $InputHeight = $InputImage.Height
